@@ -1,38 +1,104 @@
+html,
+body {
+  height: 100vw;
+  width: 100%;
+  margin: 0;
+  padding: 0 2em;
+  box-sizing: border-box;
+  background-color: white;
+}
+
 .App {
+  font-family: sans-serif;
+}
+
+.App h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.countries {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.country {
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 2em;
+  min-width: 10em;
+  max-width: 30%;
+  border-radius: 2em;
+  background-color: #e6eff1;
+  border: 2px solid lightgrey;
+  transition: 0.5s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.country:hover {
+  border: 2px solid black;
+  box-shadow: 0 2px 4px #555;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.country-image {
+  flex: 1;
+}
+
+.country-image img {
+  width: 100%;
+}
+
+.country-details {
+  flex: 1;
+}
+
+.country-details h2 {
+  margin: 0;
+}
+
+.country-details p span:first-child {
+  font-weight: bold;
+}
+
+select {
+  height: auto;
+  background-color: white;
+  border: 2px solid lightgrey;
+  border-radius: 8pt;
+  padding: 0.75em;
+}
+
+@media screen and (max-width: 768px) {
+  .country {
+    max-width: 80%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-between;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.filters {
+  margin: 1em 0;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  justify-content: center;
+}
+
+label select {
+  margin-left: 0.5em;
+}
+
+@media screen and (max-width: 768px) {
+  .filters {
+    max-width: 80%;
+    margin: auto;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 1em;
   }
 }
