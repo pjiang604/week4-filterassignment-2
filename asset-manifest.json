@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/week4-filterassignment-2/static/css/main.073c9b0a.css",
+    "main.js": "/week4-filterassignment-2/static/js/main.5f714a4c.js",
+    "static/js/787.7975fe09.chunk.js": "/week4-filterassignment-2/static/js/787.7975fe09.chunk.js",
+    "static/media/logo.svg": "/week4-filterassignment-2/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/week4-filterassignment-2/index.html",
+    "main.073c9b0a.css.map": "/week4-filterassignment-2/static/css/main.073c9b0a.css.map",
+    "main.5f714a4c.js.map": "/week4-filterassignment-2/static/js/main.5f714a4c.js.map",
+    "787.7975fe09.chunk.js.map": "/week4-filterassignment-2/static/js/787.7975fe09.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.5f714a4c.js"
+  ]
+}
